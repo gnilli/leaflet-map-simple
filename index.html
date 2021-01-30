@@ -35,13 +35,16 @@
   });
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
   L.marker([46.52756113538787, 12.008098946466589]).addTo(map) // EDIT latitude, longitude to re-position marker
   .bindPopup("ciao sono qui"); // EDIT pop-up text message
+    
+      L.marker([46.53, 12.0081]).addTo(map) // EDIT latitude, longitude to re-position marker
+  .bindPopup("ciao sono invece qui"); // EDIT pop-up text message
 
   </script>
 </body>
